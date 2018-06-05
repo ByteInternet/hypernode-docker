@@ -39,7 +39,7 @@ Because `systemctl` is not available inside the container, the services are star
 To restart all services run:
 
 ```bash
-bash /etc/my_init.d/restart_services.sh
+bash /etc/my_init.d/60_restart_services.sh
 ```
 
 If you only want to restart a specific service, inspect the `restart_services.sh` script and kill the screen for the service you want to restart. Then run the corresponding screen command to start the service again.
@@ -55,6 +55,10 @@ If you only want to restart a specific service, inspect the `restart_services.sh
 [Adding your own keys to the container](Documentation/adding-keys-to-container.md)
 
 [Inspecting emails sent from the Docker](Documentation/inspecting-emails.md)
+
+[Installing Magento 1](Documentation/magento-1-install.md)
+
+[Installing Magento 2](Documentation/magento-2-install.md)
 
 ## Related projects
 
