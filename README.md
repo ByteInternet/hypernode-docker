@@ -52,6 +52,8 @@ If you only want to restart a specific service, inspect the `restart_services.sh
 
 [Switching PHP versions](Documentation/switching-php-versions.md)
 
+[Adding your own keys to the container](Documentation/adding-keys-to-container.md)
+
 
 ## Related projects
 
