@@ -11,13 +11,13 @@ The `hypernode-docker` image has SSH, PHP, NGINX, MySQL, Redis and Varnish. The 
 ### Starting the Docker and logging in
 
 Starting the container
-```
+```bash
 # TBD
 docker run <docker name>
 ```
 
 Get the IP address
-```
+```bash
 # Find the container ID
 docker ps <docker name>
 # Find the IP address of the container
@@ -25,7 +25,7 @@ docker inspect -f '{{ .NetworkSettings.IPAddress }}' <the container ID>
 ```
 
 Log in to the container:
-```
+```bash
 # SSH into the machine using the retrieved IP address. Example:
 ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null root@172.17.0.2
 # Or as the 'app' user
@@ -38,7 +38,7 @@ Because `systemctl` is not available inside the container, the services are star
 
 To restart all services run:
 
-```
+```bash
 bash /etc/my_init.d/restart_services.sh
 ```
 
