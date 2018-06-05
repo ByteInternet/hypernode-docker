@@ -46,6 +46,8 @@ If you only want to restart a specific service, inspect the `restart_services.sh
 
 ## See our excellent Documentation!
 
+[Starting the container](Documentation/starting-the-container.md)
+
 [Importing an existing Magento shop into the Docker](Documentation/importing-a-shop.md)
 
 [Switching PHP versions](Documentation/switching-php-versions.md)
