@@ -44,18 +44,11 @@ bash /etc/my_init.d/restart_services.sh
 
 If you only want to restart a specific service, inspect the `restart_services.sh` script and kill the screen for the service you want to restart. Then run the corresponding screen command to start the service again.
 
-### Switching PHP versions
+## See our excellent Documentation!
 
-Unlike the [hypernode-vagrant](https://github.com/ByteInternet/hypernode-vagrant) you can not just run `hypernode-switch-php` to change the PHP version. Because there is no systemctl to manage the services other steps must be performed. To switch to a different PHP version run the following commands:
+[Importing an existing Magento shop into the Docker](Documentation/importing-a-shop.md)
 
-```
-# Edit /etc/my_init.d/restart_services.sh to use the correct PHP
-vim /etc/my_init.d/restart_services.sh
-# Change the enabled PHP
-update-alternatives --set php $(which php7.1)
-# Restart (all) services
-bash /etc/my_init.d/restart_services.sh
-``` 
+[Switching PHP versions](Documentation/switching-php-versions.md)
 
 
 ## Related projects
