@@ -54,6 +54,7 @@ If you only want to restart a specific service, inspect the `restart_services.sh
 
 [Adding your own keys to the container](Documentation/adding-keys-to-container.md)
 
+[Inspecting emails sent from the Docker](Documentation/inspecting-emails.md)
 
 ## Related projects
 
