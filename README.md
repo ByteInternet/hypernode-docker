@@ -27,10 +27,12 @@ docker inspect -f '{{ .NetworkSettings.IPAddress }}' <the container ID>
 Log in to the container:
 ```bash
 # SSH into the machine using the retrieved IP address. Example:
-ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null root@172.17.0.2
-# Or as the 'app' user
 ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null app@172.17.0.2
+# Or as the root user
+ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null root@172.17.0.2
 ```
+
+The password is `insecure_docker_ssh_password`, or use the [pregenerated key](keys/README.md).
 
 ### Restarting services
 
