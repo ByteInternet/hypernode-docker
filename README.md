@@ -12,8 +12,8 @@ The `hypernode-docker` image has SSH, PHP, NGINX, MySQL, Redis and Varnish. The 
 
 Starting the container
 ```bash
-# TBD
-docker run <docker name>
+docker pull docker.hypernode.com/byteinternet/hypernode-docker:latest
+docker run docker.hypernode.com/byteinternet/hypernode-docker:latest
 ```
 
 Get the IP address

@@ -5,7 +5,8 @@
 To start the container in the foreground, run the following command:
 
 ```bash
-$ docker run hypernode-docker
+$ docker pull docker.hypernode.com/byteinternet/hypernode-docker:latest
+$ docker run docker.hypernode.com/byteinternet/hypernode-docker:latest
 *** Running /etc/my_init.d/00_regen_ssh_host_keys.sh...
 *** Running /etc/my_init.d/10_login_instructions.sh...
                                               _
@@ -68,7 +69,7 @@ You can now log in with SSH using the IP address seen in the output.
 
 To start the container in the background, run the following command:
 ```bash
-$ docker run -d hypernode-docker
+$ docker run -d docker.hypernode.com/byteinternet/hypernode-docker:latest
 36532b58822cf27f74234f6afc01db21fca15b480bf43634ae725db35047dc5a
 ```
 

@@ -6,7 +6,7 @@ To create a Docker instance of `hypernode-docker` with your own keys, create a d
 $ ls
 key.pub   Dockerfile
 $ cat Dockerfile
-FROM hypernode-docker
+FROM docker.hypernode.com/byteinternet/hypernode-docker:latest
 MAINTAINER yourname <example@example.nl>
 
 ADD key.pub /tmp/key.pub
