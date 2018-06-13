@@ -60,6 +60,8 @@ If you only want to restart a specific service, inspect the `restart_services.sh
 
 [Installing Magento 1](Documentation/magento-1-install.md)
 
+[Mac specific example](examples/osx_development/README.md)
+
 ## Related projects
 
 ### [hypernode-vagrant](https://github.com/ByteInternet/hypernode-vagrant)
