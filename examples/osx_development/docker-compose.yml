@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  hypernode-docker:
+    container_name: myproject-hypernode-docker
+    image: docker.hypernode.com/byteinternet/hypernode-docker:latest
+    ports:
+      - '2222:22' # Connect with: ssh app@127.0.0.1 -p 2222
+      - '8888:80'  # If you have a webserver running, change to '8888:80' or any other free port on localhost
+      - '3307:3306'
+    volumes:
+      - app-sync:/data/web/public:nocopy # For Magento2 change to: 'app-sync:/data/web/magento2:nocopy' and follow https://support.hypernode.com/knowledgebase/installing-magento-2-on-hypernode/
+
+volumes:
+  app-sync:
+    external:
+      name: 'myproject-app-sync' # keep this unique!
