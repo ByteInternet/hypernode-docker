@@ -62,6 +62,14 @@ If you only want to restart a specific service, inspect the `restart_services.sh
 
 [Mac specific example](examples/osx_development/README.md)
 
+## Inspiration
+
+If you're wondering about how you can make best use of this image, check out some of these awesome project(s) by other users.
+
+### [Disposable Magento testing environments with Kubernetes](https://elgentos.nl/blog/disposable-magento-testing-environments-with-k8s/)
+
+[Peter Jaap Blaakmeer](https://github.com/peterjaap) explains how [Elgentos](https://elgentos.nl) automatically sets up disposable testing environments for branches, tags and commits in their repositories by deploying the `hypernode-docker` image on a Kubernetes cluster on the Google Cloud Platform.
+
 ## Related projects
 
 ### [hypernode-vagrant](https://github.com/ByteInternet/hypernode-vagrant)
