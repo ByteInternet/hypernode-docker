@@ -19,7 +19,7 @@ docker run docker.hypernode.com/byteinternet/hypernode-docker:latest
 Get the IP address
 ```bash
 # Find the container ID
-docker ps <docker name>
+docker ps
 # Find the IP address of the container
 docker inspect -f '{{ .NetworkSettings.IPAddress }}' <the container ID>
 ```
