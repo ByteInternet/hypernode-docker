@@ -70,6 +70,10 @@ If you're wondering about how you can make best use of this image, check out som
 
 [Peter Jaap Blaakmeer](https://github.com/peterjaap) explains how [Elgentos](https://elgentos.nl) automatically sets up disposable testing environments for branches, tags and commits in their repositories by deploying the `hypernode-docker` image on a Kubernetes cluster on the Google Cloud Platform.
 
+### [Local development with the Hypernode Docker container](https://blog.guapa.nl/local-development-with-the-hypernode-docker-container-linux?)
+
+[Ruthger Idema](https://github.com/ruthgerx) describes how [Guapa](https://www.guapa.nl/) mimics their production environments as close as possible when developing on their local machines. Also includes a nice example for setting up Xdebug to work with PHPstorm in the `hypernode-docker`.
+
 ## Related projects
 
 ### [hypernode-vagrant](https://github.com/ByteInternet/hypernode-vagrant)
