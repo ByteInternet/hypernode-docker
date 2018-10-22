@@ -72,7 +72,7 @@ If you're wondering about how you can make best use of this image, check out som
 
 ### [Local development with the Hypernode Docker container](https://blog.guapa.nl/local-development-with-the-hypernode-docker-container-linux?)
 
-[Ruthger Idema](https://github.com/ruthgerx) describes how [Guapa](https://www.guapa.nl/) mimics their production environments as close as possible when developing on their local machines. Also includes a nice example for setting up Xdebug to work with PHPstorm in the `hypernode-docker`.
+[Ruthger Idema](https://github.com/ruthgeridema) describes how [Guapa](https://www.guapa.nl/) mimics their production environments as close as possible when developing on their local machines. Also includes a nice example for setting up Xdebug to work with PHPstorm in the `hypernode-docker`.
 
 ## Related projects
 
