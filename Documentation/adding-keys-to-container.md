@@ -10,7 +10,7 @@ FROM docker.hypernode.com/byteinternet/hypernode-docker:latest
 MAINTAINER yourname <example@example.nl>
 
 ADD key.pub /tmp/key.pub
-RUN cat /tmp/key.pub > /root/.ssh/authorized_keys && cat /tmp/key.pub > /data/web/.ssh/authorized_keys && && rm -f /tmp/deployment.pub
+RUN cat /tmp/key.pub > /root/.ssh/authorized_keys && cat /tmp/key.pub > /data/web/.ssh/authorized_keys && rm -f /tmp/deployment.pub
 ```
 
 Then build the Docker with:
