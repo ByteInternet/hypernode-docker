@@ -5,6 +5,6 @@ options:
 syncs:
   myproject-app-sync: # Unique! Matches volume name in docker-compose.yml
     src: './magento' # Path to  Magento source code for example in IDE (can be anywhere)
-    sync_userid: '1001' # Don't remove!
+    sync_userid: '1000' # Don't remove!
     sync_excludes: ['var/cache','var/session','var/log','var/view_preprocessed'] # Extend for M1 / M2
     watch_excludes: ['var/cache','var/session','var/log','var/view_preprocessed'] # Extend for M1 / M2

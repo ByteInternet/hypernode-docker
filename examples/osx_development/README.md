@@ -147,7 +147,7 @@ syncs:
     src: './magento'
     sync_excludes: ['vendor', 'var','pub/media/catalog/product/cache','pub/static','pub/media/tmp','dev','generated']
     watch_excludes: ['vendor', 'var','pub/media/catalog/product/cache','pub/static','pub/media/tmp','dev','generated','lib','setup','update','.*/.git', '.*/node_modules'] # Only changes in app and media
-    sync_userid: '1001'
+    sync_userid: '1000'
     notify_terminal: true
     monit_enable: true
     monit_interval: 10
