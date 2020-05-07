@@ -8,7 +8,34 @@ The `hypernode-docker` image has SSH, PHP, NGINX, MySQL, Redis and Varnish. The 
 
 ## Usage
 
-### Starting the Docker and logging in
+### The new Debian Buster hypernode-docker [BETA]
+
+We're in the process of upgrading the Hypernode platform from [Ubuntu Xenial](https://wiki.ubuntu.com/XenialXerus/ReleaseNotes) to [Debian Buster](https://www.debian.org/releases/buster/). For testing and development we have already made a new container based on this new operating system available. Note that in production the OS will still be Ubuntu Xenial until further notice. **If you want to test with Debian Buster on a real Hypernode already, you can contact our support and we'll see if we can provide you with a (free) node in this testing phase.**
+
+The Debian Buster Hypernode will contain the same functionality as the Ubuntu Xenial Hypernode except that it runs on a newer operating system. This means that some software will be a newer version than before. Most software that is relevant for the applications people generally run on a Hypernode we have retained to a compatible version, for example PHP 5.6 is (for now) still available.
+
+```
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker:latest
+docker run docker.hypernode.com/byteinternet/hypernode-buster-docker:latest
+```
+
+Now with the introduction of Debian Buster we have also made it so that for some of the possible configurations we have provided a pre-built image so it is not necessary anymore to [manually install a different MySQL](https://github.com/ByteInternet/hypernode-docker/issues/33) for example than what would be in the default box.
+
+These are the URLs of the containers with specific configurations:
+```
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php56-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php70-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php71-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php72-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php73-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php56-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php70-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php71-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php72-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php73-mysql57:latest
+```
+
+### Starting the Ubuntu Xenial Docker and logging in
 
 Starting the container
 ```bash
