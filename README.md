@@ -27,12 +27,14 @@ docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php56-mysq
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php70-mysql56:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php71-mysql56:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php72-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php74-mysql56:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php73-mysql56:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php56-mysql57:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php70-mysql57:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php71-mysql57:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php72-mysql57:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php73-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php74-mysql57:latest
 ```
 
 ### Starting the Ubuntu Xenial Docker and logging in
