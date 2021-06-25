@@ -8,12 +8,9 @@ The `hypernode-docker` image has SSH, PHP, NGINX, MySQL, Redis and Varnish. The 
 
 ## Usage
 
-### The new Debian Buster hypernode-docker [BETA]
+### The Debian Buster hypernode-docker
 
-We're in the process of upgrading the Hypernode platform from [Ubuntu Xenial](https://wiki.ubuntu.com/XenialXerus/ReleaseNotes) to [Debian Buster](https://www.debian.org/releases/buster/). For testing and development we have already made a new container based on this new operating system available. Note that in production the OS will still be Ubuntu Xenial until further notice. **If you want to test with Debian Buster on a real Hypernode already, you can contact our support and we'll see if we can provide you with a (free) node in this testing phase.**
-
-The Debian Buster Hypernode will contain the same functionality as the Ubuntu Xenial Hypernode except that it runs on a newer operating system. This means that some software will be a newer version than before. Most software that is relevant for the applications people generally run on a Hypernode we have retained to a compatible version, for example PHP 5.6 is (for now) still available.
-
+Starting the container
 ```
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker:latest
 docker run docker.hypernode.com/byteinternet/hypernode-buster-docker:latest
@@ -46,13 +43,7 @@ docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php74-mysq
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php80-mysql80:latest
 ```
 
-### Starting the Ubuntu Xenial Docker and logging in
-
-Starting the container
-```bash
-docker pull docker.hypernode.com/byteinternet/hypernode-docker:latest
-docker run docker.hypernode.com/byteinternet/hypernode-docker:latest
-```
+### Logging into the container
 
 Get the IP address
 ```bash
