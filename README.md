@@ -105,6 +105,11 @@ If you're wondering about how you can make best use of this image, check out som
 
 [Ruthger Idema](https://github.com/ruthgeridema) describes how [Guapa](https://www.guapa.nl/) mimics their production environments as close as possible when developing on their local machines. Also includes a nice example for setting up Xdebug to work with PHPstorm in the `hypernode-docker`.
 
+### [WSL development environment for Hypernode Docker](https://github.com/frosit/hypernode-docker-wsl2)
+
+[Fabio Ros](https://github.com/frosit) over at [FROSIT](https://frosit.nl/) created a fully-featured [WSL](https://docs.microsoft.com/en-us/windows/wsl/) development environment that integrates nicely with WSL on your Windows PC and your PHPStorm/VSCode editor.
+Check out the sourcecode and how to set this up over at the open-source [`hypernode-docker-wsl2`](https://github.com/frosit/hypernode-docker-wsl2) repository.
+
 ## Related projects
 
 ### [hypernode-vagrant](https://github.com/ByteInternet/hypernode-vagrant)
