@@ -33,6 +33,16 @@ Inside the docker, install php-xdebug.
 apt-get install php-xdebug
 ```
 
+Or if you are running PHP 8.0 you need to install:
+```
+apt-get install php8.0-xdebug
+```
+
+And for PHP 8.1:
+```
+apt-get install php8.1-xdebug
+```
+
 Note: if you're doing this manually all the time consider making a Dockerfile based on `hypernode-docker` that does this as part of the image.
 
 Enable `php-xdebug` for `php-fpm`
