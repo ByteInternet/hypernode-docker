@@ -8,6 +8,27 @@ The `hypernode-docker` image has SSH, PHP, NGINX, MySQL, Redis and Varnish. The 
 
 ## Usage
 
+### Note for Apple silicon (M1, M2) users
+
+We have found that the Docker image does not work out of the box for Docker on Mac with M1+ processors. To fix those problems, we have created a Dockerfile:
+```Dockefile
+FROM docker.hypernode.com/byteinternet/hypernode-buster-docker:latest
+
+RUN sed -i 's/access_by_lua_file/#access_by_lua_file/g' /etc/nginx/security.conf && \
+    sed -i 's/content_by_lua/return 200 "ok";\n return 200/g' /etc/nginx/testsite.conf && \
+    sed -i 's#load_module "modules/ngx_http_lua_module.so";##g' /etc/nginx/nginx.conf
+```
+
+Place these contents in a file named `Dockerfile` and run in that exact same directory the following:
+```bash
+docker build . -t hypernode-buster-docker-no-lua
+```
+
+Then instead of running the Docker image with `docker.hypernode.com/byteinternet/hypernode-buster-docker:latest`, run it with the docker image `hypernode-buster-docker-no-lua`.
+
+**Note about performance**
+We have tested usage of the Hypernode Docker image on Apple silicon ourselves and have found while it works with above changes, performance is unfortunately suboptimal (our current measures show 35 seconds of load time for a stock Magento homepage). If this performance drawback is fine for you, go ahead with it. If you need more performance when using the Hypernode Docker image, we recommend running the Docker image on a system that can run the image natively, like a workstation/laptop with an Intel or AMD processor. You could even run these images on a server with an AMD/Intel processor. And manage the test environments remotely through SSH, SFTP along with tools like VSCode.
+
 ### The Debian Buster hypernode-docker
 
 Starting the container
