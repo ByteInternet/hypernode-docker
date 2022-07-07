@@ -27,6 +27,7 @@ docker build . -t hypernode-buster-docker-no-lua
 Then instead of running the Docker image with `docker.hypernode.com/byteinternet/hypernode-buster-docker:latest`, run it with the docker image `hypernode-buster-docker-no-lua`.
 
 **Note about performance**
+
 We have tested usage of the Hypernode Docker image on Apple silicon ourselves and have found while it works with above changes, performance is unfortunately suboptimal (our current measures show 35 seconds of load time for a stock Magento homepage). If this performance drawback is fine for you, go ahead with it. If you need more performance when using the Hypernode Docker image, we recommend running the Docker image on a system that can run the image natively, like a workstation/laptop with an Intel or AMD processor. You could even run these images on a server with an AMD/Intel processor. And manage the test environments remotely through SSH, SFTP along with tools like VSCode.
 
 ### The Debian Buster hypernode-docker
