@@ -39,6 +39,7 @@ RUN composer global require mage2tv/magento-cache-clean
 
 # Configuring Nginx
 RUN wget https://raw.githubusercontent.com/heesbeen/hypernode-docker-develop/master/Assets/https.dummytag.hypernode.io.conf
+#RUN wget https://raw.githubusercontent.com/ByteInternet/hypernode-docker/master/examples/linux_development/https.dummytag.hypernode.io.conf
 RUN mv https.dummytag.hypernode.io.conf /etc/nginx/sites/https.dummytag.hypernode.io.conf
 
 # Install Bash Profile additions
