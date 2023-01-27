@@ -43,3 +43,4 @@ RUN mv https.dummytag.hypernode.io.conf /etc/nginx/sites/https.dummytag.hypernod
 
 # Install Bash Profile additions
 RUN echo "alias cf2='~/.config/composer/vendor/bin/cache-clean.js -d /data/web/magento2 -w'" >> /data/web/.bash_aliases
+RUN echo "alias phpx='XDEBUG_CONFIG=\"idekey=PHPSTORM\" php  -dxdebug.remote_enable=on -f'" >> /data/web/.bash_aliases
