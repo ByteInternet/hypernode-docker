@@ -5,7 +5,8 @@
 ### Pull and run container
 
 ```
-docker build -t hypernode-docker-develop
+cd examples/linux_development
+docker build -t hypernode-docker-develop .
 docker run -d -p 3306:3306 -p 22:22 -p 80:80 -p 443:443 -p 8025:8025 -p 9200:9200 -v <local_path>:/data/web/magento --name hypernode-docker-develop
 ```
 
