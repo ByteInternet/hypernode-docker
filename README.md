@@ -50,6 +50,17 @@ docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php74-mysq
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php80-mysql80:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php81-mysql80:latest
 docker pull docker.hypernode.com/byteinternet/hypernode-buster-docker-php82-mysql80:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php72-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php72-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php72-mysql80:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php73-mysql56:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php73-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php73-mysql80:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php74-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php74-mysql80:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php83-mysql80:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php84-mysql57:latest
+docker pull docker.hypernode.com/byteinternet/hypernode-bookworm-docker-php84-mysql80:latest
 ```
 
 ### Logging into the container
